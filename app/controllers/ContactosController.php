@@ -49,7 +49,7 @@ class ContactosController extends BaseController {
 		//
 		// }
 
-		$contacto = new contacto;
+		$contacto = new Contacto;
 
 		$contacto->nombre = Input::get('nombre','');
 		$contacto->email = Input::get('email','');
@@ -85,7 +85,7 @@ class ContactosController extends BaseController {
 	public function show($id)
 	{
 
-		$contacto = contacto::find($id);
+		$contacto = Contacto::find($id);
 		$categoria = Categoria::find($contacto->categorias_id);
 
 		// show the view and pass the nerd to it
