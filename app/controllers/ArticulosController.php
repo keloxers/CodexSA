@@ -11,34 +11,39 @@ class ArticulosController extends BaseController {
 	public function index()
 	{
 
+				//
+        // $articulo_tapa = DB::table('articulos')
+				// 									->where('estado', '=', 'publicado')
+				// 									->where('tipo', '=', 'principal')
+				// 									->orderBy('id', 'desc')
+				// 									->first();
+				//
+				// $articulos = DB::table('articulos')
+				// 									->where('estado', '=', 'publicado')
+				// 									->orderBy('id', 'desc')->paginate(16);
+				//
+				// $articulos_masvistos = DB::table('articulos')
+				// 									->where('estado', '=', 'publicado')
+				// 									->orderBy('visitas', 'desc')
+				// 									->orderBy('created_at', 'desc')
+				// 									->paginate(4);
+				//
+				// $banners_smalls = DB::table('banners')
+				// 						->where('posicion', '=', 'homesmall')
+				// 						->get();
+				//
+				//
+        // return View::make('home', array('articulo_tapa' => $articulo_tapa,
+				// 																'articulos' => $articulos,
+				// 																'articulos_masvistos' => $articulos_masvistos,
+				// 																'banners_smalls' => $banners_smalls
+				//
+				// 																));
 
-        $articulo_tapa = DB::table('articulos')
-													->where('estado', '=', 'publicado')
-													->where('tipo', '=', 'principal')
-													->orderBy('id', 'desc')
-													->first();
+				$title = "";
+						return View::make('home', array('title' => $title
+																));
 
-				$articulos = DB::table('articulos')
-													->where('estado', '=', 'publicado')
-													->orderBy('id', 'desc')->paginate(16);
-
-				$articulos_masvistos = DB::table('articulos')
-													->where('estado', '=', 'publicado')
-													->orderBy('visitas', 'desc')
-													->orderBy('created_at', 'desc')
-													->paginate(4);
-
-				$banners_smalls = DB::table('banners')
-										->where('posicion', '=', 'homesmall')
-										->get();
-
-
-        return View::make('home', array('articulo_tapa' => $articulo_tapa,
-																				'articulos' => $articulos,
-																				'articulos_masvistos' => $articulos_masvistos,
-																				'banners_smalls' => $banners_smalls
-
-																				));
 
 	}
 
