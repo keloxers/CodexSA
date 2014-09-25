@@ -17,7 +17,27 @@
 		<link href="/css/font-awesome.min.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 		<link rel="image_src" href="thumbnail.png">
-		<link rel="icon" type="image/ico" href="favicon.ico">
+		<!-- <link rel="icon" type="image/ico" href="favicon.ico"> -->
+
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+        <meta http-equiv='Content-Language' content='es' />
+        <meta name='google-site-verification' content='W8bAMgC8Sr5gk8OtozoKpt8D3gtejBAQS4ZnJyaso-M' />
+        <meta name='LANGUAGE' content='es' />
+        <meta name='DISTRIBUTION' content='Global' />
+        <meta name='ROBOTS' content='all' />
+        <meta http-equiv='REFRESH' CONTENT='3400;URL=http://www.codex-sa.com'>
+        <meta name='AUTHOR' content='Codex S.A.' />
+        <meta name='classification' content='Hosting site web desarrollo developer app movil angular android iphone' />
+        <meta name='Googlebot' content='all' />
+        <meta name='GENERATOR' content='www.codex-sa.com | codex-sa.com' />
+        <meta name='SUBJECT' content='www.codex-sa.com | codex-sa.com' />
+
+        <meta name='DESCRIPTION' content='Hosting site web desarrollo developer app movil angular android iphone' />
+        <meta name='ABSTRACT' content='Hosting site web desarrollo developer app movil angular android iphone' />
+        <meta name='KEYWORDS' content='Hosting site web desarrollo developer app movil angular android iphone' />
+				<meta name='keywords' content='Hosting site web desarrollo developer app movil angular android iphone' />
+
+
 	</head>
 
 	<body data-spy="scroll" data-target=".navbar" data-offset='64' onLoad="$.stellar();">
@@ -129,6 +149,16 @@
 	<script src="/js/bootstrap-lightbox.min.js"></script>
 <!--google analytics-->
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-137439-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </body>
 </html>
