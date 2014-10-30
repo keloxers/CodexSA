@@ -56,12 +56,13 @@
 					<a href="/#intro" class="brand"><img src="/img/logo.png" alt=""></a>
 					<div class="nav-collapse collapse">
 						<ul class="nav pull-right">
-							<li><a href="/#intro">Home</a></li>
-							<li><a href="/#services-top">Servicios</a></li>
-							<li><a href="/#works-top">Trabajos</a></li>
-							<li><a href="/#gallery-top">Galería</a></li>
-							<li><a href="/#team-top">Equipo</a></li>
-							<li><a href="/#contact-top">Contacto</a></li>
+							<li><a href="/">Home</a></li>
+							<!-- <li><a href="/blog">Blog</a></li> -->
+							<li><a href="/sections/servicios">Servicios</a></li>
+							<li><a href="/sections/trabajos">Trabajos</a></li>
+							<li><a href="/sections/galeria">Galería</a></li>
+							<li><a href="/sections/equipo">Equipo</a></li>
+							<!-- <li><a href="/#contact-to">Contacto</a></li> -->
 
 							@if (Sentry::check())
 							<li {{ (Request::is('users/show/' . Session::get('userId')) ? 'class="active"' : '') }}><a href="{{ URL::to('users') }}/{{ Session::get('userId') }}"><i class="icon-user"></i></a></li>
@@ -102,6 +103,7 @@
 					<ul>
 						<li><h5>Menu</h5></li>
 						<li><a href="/#intro">Home</a></li>
+						<li><a href="/blog">Blog</a></li>
 						<li><a href="/#services-top">Servicios</a></li>
 						<li><a href="/#works-top">Trabajos</a></li>
 						<li><a href="/#gallery-top">Galería</a></li>
@@ -112,8 +114,8 @@
 				<div class="span2 offset1">
 					<ul>
 						<li><h5>Social</h5></li>
-						<li><a class="facebook" href="http://www.facebook.com/codexcontrol" target="_blank">Facebook</a></li>
-						<li><a class="twitter" href="http://www.twitter.com/codexcontrol" target="_blank">Twitter</a></li>
+						<li><a class="facebook" href="http://www.facebook.com/sacodex" target="_blank">Facebook</a></li>
+						<li><a class="twitter" href="http://www.twitter.com/csacodex" target="_blank">Twitter</a></li>
 						<li><a class="google" href="https://plus.google.com/u/0/104533843132286032110/posts" target="_blank">Google+</a></li>
 						<li><a class="instagram" href="http://www.instagram.com/codexcontrol" target="_blank">Instagram</a></li>
 						<li><a class="pinterest" href="http://www.pinterest.com/codexcontrol" target="_blank">Pinterest</a></li>

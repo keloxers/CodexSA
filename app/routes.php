@@ -48,24 +48,35 @@ Route::resource('groups', 'GroupController');
 App::missing(function($exception)
 {
 
-		return Response::view('pages.404');
+	return Response::view('pages.404');
 });
 
 
 
 // Index
 Route::get( '/', array(
-		'as' => 'articulos.index',
-		'uses' => 'ArticulosController@index'
+	'as' => 'articulos.index',
+	'uses' => 'ArticulosController@index'
 ) );
+
+
+// Index
+Route::get( '/blog', array(
+	'as' => 'articulos.blog',
+	'uses' => 'ArticulosController@blog'
+) );
+
 
 Route::get('/pages/{url_seo}', 'PagesController@show');
 
+Route::get('/sections/{section}', 'SectionsController@show');
+
 // Index
 Route::post( '/contactos/store', array(
-		'as' => 'contactos.store',
-		'uses' => 'ContactosController@store'
+	'as' => 'contactos.store',
+	'uses' => 'ContactosController@store'
 ) );
+
 
 Route::get('/pages/{url_seo}', 'PagesController@show');
 
@@ -75,27 +86,27 @@ Route::get('/pages/{url_seo}', 'PagesController@show');
 Route::group(['before' => 'auth|standardUser'], function()
 {
 
-		// Route::resource('contactos', 'ContactosController');
-		Route::get('/contactos/{id}/delete', 'ContactosController@destroy');
+	// Route::resource('contactos', 'ContactosController');
+	Route::get('/contactos/{id}/delete', 'ContactosController@destroy');
 
 
 
-		Route::get('/articulos/ver', 'ArticulosController@ver');
-		Route::get('/articulos/{id}/delete', 'ArticulosController@destroy');
-		Route::get('/articulos/{id}/publicar', 'ArticulosController@publicar');
+	Route::get('/articulos/ver', 'ArticulosController@ver');
+	Route::get('/articulos/{id}/delete', 'ArticulosController@destroy');
+	Route::get('/articulos/{id}/publicar', 'ArticulosController@publicar');
 
-		Route::get('/articulos/{id}/archivos/{padre}', 'ArchivosController@index');
-
-
-		Route::resource('archivos', 'ArchivosController');
-		Route::get('/archivos/{id}/delete', 'ArchivosController@destroy');
+	Route::get('/articulos/{id}/archivos/{padre}', 'ArchivosController@index');
 
 
+	Route::resource('archivos', 'ArchivosController');
+	Route::get('/archivos/{id}/delete', 'ArchivosController@destroy');
 
-		Route::resource('articulos', 'ArticulosController');
 
-		Route::resource('pages', 'PagesController');
-		Route::get('/pages/{id}/delete', 'PagesController@destroy');
+
+	Route::resource('articulos', 'ArticulosController');
+
+	Route::resource('pages', 'PagesController');
+	Route::get('/pages/{id}/delete', 'PagesController@destroy');
 
 
 
